@@ -17,12 +17,6 @@ IF NOT EXISTS car_models
 (id)
 );
 
-CREATE INDEX idx_make_code
-ON car_models(make_code);
-
-CREATE INDEX idx_make_title
-ON car_models(make_title);
-
-CREATE INDEX idx_year
-ON car_models (year);
+CREATE INDEX idx
+ON car_models(make_code, make_title, year);
 
